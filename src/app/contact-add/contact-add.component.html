@@ -1,0 +1,25 @@
+<div id='addForm'>
+<form (ngSubmit)="onSubmit()">
+        <h3 id="add">Add Contact </h3>
+    <div>
+        <label for="firstName">First Name: </label>
+        <input type="text" placeholder="First Name" name="firstName" required [(ngModel)]="model.firstName">
+    </div>
+    <div>
+        <label for="lastName">Last Name: </label>
+        <input type="text" placeholder="Last Name" name="lastName" required [(ngModel)]="model.lastName">
+    </div>
+    <div>
+        <label for="email">Email: </label>
+        <input type="email" placeholder="Email" name="email" email required [(ngModel)]="model.email">
+    </div>
+    <div>
+        <label for="phone">Phone: </label>
+        <input type="phone" placeholder="Phone" name="phone" phone required [(ngModel)]="model.phoneNumber">
+    </div>
+   
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</div>

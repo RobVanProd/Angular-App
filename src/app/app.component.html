@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id= "header" >
+  <h1>
+    {{ title }}'s Portfolio Page!
+  </h1>
+  <img  alt="RobVan" src="../assets/images/400dpiLogo.png">
+ <br> 
+ <app-greeting></app-greeting>
+  <h2 id='city'>
+    I am from {{ city }}
+  </h2>
+  <h2 id = 'aboutMe'> 
+    {{ aboutMe }}
+  </h2>
+  
+  <h2 id= 'tag'>
+ {{ tagLine }}
+  </h2>
+  
+  <app-skills id= "skills"></app-skills>
+<br/>
+
+<div>
+  <app-contactscomponent id = "contacts"></app-contactscomponent>
+  </div>
+
+
+</div>
+<div>
+    <div>
+      <br/>
+      
+        <app-contact-add id="contactAdd"></app-contact-add>
+        </div>
+</div>
+<div>
+  <br/>
+    <app-contact-form ></app-contact-form>
+</div>
+
